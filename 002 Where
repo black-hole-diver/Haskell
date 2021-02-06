@@ -1,15 +1,13 @@
 import Data.List
 import System.IO
 
---Changed from baseball to bmi
+--Where clause used with guards with an example of determing a baseball player by their kilo and bats
 
+bmi4male :: Double -> Double -> String
 
-bmi4male :: Float -> Float -> Float
-bmi4male height weight
-	| bmi <= 18.50 = "THIN"
-	| bmi <= 24.99 = "NORMAL"
-	| bmi <= 29.99 = "FAT"
-	| otherwise = "VERY FAT"
-	where bmi = weight / ((height/100) ** 2)
-	
-putStrLn ("You are considered to be " ++ bmi4male ++ " with a BMI score of " ++ avg)
+bmi4male kilo meter
+	| bmi <= 18.50 = "Thin"
+	| bmi <= 24.99	= "Normal"
+	| bmi <= 29.99 = "Fat"
+	| otherwise = "Very Fat"
+	where bmi = kilo / (meter**2)

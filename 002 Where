@@ -1,8 +1,6 @@
 import Data.List
 import System.IO
 
---Where clause used with guards with an example of determing a baseball player by their kilo and bats
-
 bmi4male :: Double -> Double -> String
 
 bmi4male kilo meter

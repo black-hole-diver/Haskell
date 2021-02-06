@@ -1,13 +1,15 @@
 import Data.List
 import System.IO
 
---Where clause used with guards with an example of determing a baseball player by their hits and bats
+--Changed from baseball to bmi
 
-batAvgRating :: Double -> Double -> String
 
-batAvgRating hits atBats
-	| avg <= 0.200 = "Terrible Batting Average"
-	| avg <= 0.250 = "Average Player"
-	| avg <= 0.280 = "Your doing pretty good"
-	| otherwise = "Your a Superstar!"
-	where avg = hits / atBats
+bmi4male :: Float -> Float -> Float
+bmi4male height weight
+	| bmi <= 18.50 = "THIN"
+	| bmi <= 24.99 = "NORMAL"
+	| bmi <= 29.99 = "FAT"
+	| otherwise = "VERY FAT"
+	where bmi = weight / ((height/100) ** 2)
+	
+putStrLn ("You are considered to be " ++ bmi4male ++ " with a BMI score of " ++ avg)

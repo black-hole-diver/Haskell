@@ -1,0 +1,12 @@
+--Guards is like a function with many answer on different value
+
+import Data.List
+import System.IO
+
+whatGrade :: Int -> String
+
+whatGrade age
+	| (age < 5) = "Home"
+	| (age >= 5) && (age <= 6) = "Kindergarten"
+	| (age > 6) && (age <= 18) = "School"
+	| (age > 18) = "University"

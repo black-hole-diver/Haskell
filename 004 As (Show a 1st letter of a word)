@@ -1,0 +1,9 @@
+import Data.List
+import System.IO
+
+getFirstItem :: String -> String
+
+getFirstItem [] = "The string is empty"
+getFirstItem all@(x:xs) = "The 1st letter in " ++ all ++ " is " ++ [x]
+
+--to show the first letter in a string word

@@ -1,0 +1,13 @@
+import Data.List
+import System.IO
+
+--Where clause used with guards with an example of determing a baseball player by their hits and bats
+
+batAvgRating :: Double -> Double -> String
+
+batAvgRating hits atBats
+	| avg <= 0.200 = "Terrible Batting Average"
+	| avg <= 0.250 = "Average Player"
+	| avg <= 0.280 = "Your doing pretty good"
+	| otherwise = "Your a Superstar!"
+	where avg = hits / atBats

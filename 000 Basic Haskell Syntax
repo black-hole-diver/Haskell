@@ -62,3 +62,12 @@ asinh
 atahn
 acosh
 -}
+
+-- array
+prime = [3, 5, 7, 9]
+
+-- concetenate array
+primeMore = prime ++ [11, 13, 17, 19, 23]
+
+-- another way to write an array
+favoritNum = 2 : 7 : 21 : 66 : []

@@ -1,0 +1,64 @@
+import Data.List
+import System.IO
+
+-- 1) One line comment
+
+{- 2) Multi-lined 
+comment-}
+
+{- 3) The biggest and tinest range of number
+Int -2^63 2^63-}
+maxInt = maxBound :: Int
+minInt = minBound :: Int
+
+{- 4) Double-}
+bigFloat = 3.99999999999999999 + 0.00000000000000005
+
+-- 5) Bool True False
+
+-- 6) Char '
+
+-- 7) Tuple
+
+-- 8)
+always5 :: Int
+always5 = 5
+
+sumOfNumbers = sum [1..1000]
+
+addEx = 5 + 4
+subEx = 5 + 4
+multEx = 5 * 4
+divEx = 5 / 4
+
+modEx = mod 5 4
+modEx2 = 5 `mod` 4
+
+{-:t sqrt -}
+negNumEx = 5 + (-4)
+
+num9 = 9 :: Int
+sqrtOf9 = sqrt (fromIntegral num9)
+
+{- Useful actions and values
+pi
+exp
+log
+** 2
+truncate
+round
+ceiling
+floor
+sin
+cos
+tan
+asin
+atan
+acos
+sinh
+tahn
+cosh
+asinh
+atahn
+acosh
+-}
